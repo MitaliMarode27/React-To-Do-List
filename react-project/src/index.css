@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .img{
+    background-image: url("https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:quality(100)/2024_1_8_638403208885977231_to-do-list-la-gi-1.jpg");
+    opacity: 0.5;
+  }
+  
+  .clickBtn{
+    background-color: bisque;
+    color: brown;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .clickBtn:hover {
+    background-color: rgb(178, 178, 146);
+    color: #fff;
+    box-shadow: 2px 2px 4px beige ;
+  }
+  .box{
+    position: absolute;
+    border-radius: 1rem;
+    color: #fff;
+    top: 15rem;
+    right: 15rem;
+    font-weight: lighter;
+    font-size: 3rem;
+    height: 280px;
+    width: 480px;
+    background-color: rgba(20, 20, 20, 0.281);
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    box-shadow: 4px 4px 8px beige;
+  }
+  
+  a{
+    text-decoration: none;
+    color: brown;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  
+  .inputlist{
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px;
+    outline: none;
+   padding-left: 2rem;
+   background-color: transparent;
+   font-size: 18px;
+  }
+  
+  .addbtn{
+    width: 20%;
+    height: 40px;
+    margin-right: 1rem;
+    font-size: 16px;
+  }
+  
+  .upperBox{
+    margin-top: 3rem;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px black;
+  }
+  
+  .list{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px black;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: rgba(215, 252, 215, 0.686);
+  }
+  
+  .listBox{
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px black;
+    row-gap: 8rem;
+    margin-right: 7rem;
+    background-color: transparent;
+    margin-top: 4rem;
+  }
+  
+  
+  .deleteIcon{
+    color: rgb(142, 228, 142);
+  }
+  
+  .btn2:hover{
+    color: #fff;
+    background-color: crimson;
+  }
+  
+  .removeBtn{
+   text-align: center;
+   font-size: 16px;
+  }
+  
+  .todolistimg{
+    background-image: url("https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+  
+  .para{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: rgb(70, 61, 45);
+   font-weight: 10px;
+  }
+
+  .para1{
+    position: absolute;
+    top: 3rem;
+    left: 16rem;
+    font-size: 2rem;
+  }
+
+  .para2{
+    position: absolute;
+    top: 8rem;
+    left: 30rem;
+    font-size: 2rem;
+  }
+
+
+
+
+  /* TodoList.css */
+.todolist-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+
+.highlight {
+  color: #ffffff;
+}
+
+.inputBox{
+  background-color: #f8f9fa;
+}
+.highlight-special {
+  color: rgba(146, 209, 68, 0.808);
+  text-shadow: 2px 2px 3px rgb(36, 35, 35);
+  font-size: 3rem;
+}
+
+.bannerImg{
+  background-image: url("https://plus.unsplash.com/premium_photo-1683309563562-aa3cfde9ed10?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dG9kbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  filter: blur(5px);
+  min-height: 70vh;
+}
+
+.banner{
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+ul.list-group {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  overflow: noneo;
+}
+
+@media (max-width: 768px) {
+  .todolist-container {
+    padding: 1rem;
+  }
+
+  .highlight-special {
+    font-size: 1.5rem;
+  }
+
+  .banner{
+   
+    position: absolute;
+    top: 50%;
+   
+  }
+  
+}
+
+@media (max-width: 576px) {
+  ul.list-group {
+    max-height: 200px;
+  }
+
+  .banner{
+   
+    position: absolute;
+    top: 50%;
+   
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width:800px) {
+  .banner{   
+    position: absolute;
+    top: 50%;  
+  }
+
+}
+
