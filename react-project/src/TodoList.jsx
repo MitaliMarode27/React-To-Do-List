@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 
 const TodoList = () => {
   const [items, setItems] = useState("");
   const [list, setList] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
+
+  useEffect(() => {
+    const savedList = localStorage.getItem("todoList");
+    if (savedList) {
+      setList(JSON.parse(savedList));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(list));
+  }, [list]);
 
   const trackItems = (event) => {
     setItems(event.target.value);
